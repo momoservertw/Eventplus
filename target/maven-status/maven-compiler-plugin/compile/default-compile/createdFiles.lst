@@ -1,0 +1,17 @@
+tw\momocraft\eventplus\handlers\ConfigHandler.class
+tw\momocraft\eventplus\handlers\DataHandler.class
+tw\momocraft\eventplus\utils\Language$Lang.class
+tw\momocraft\eventplus\utils\Logger.class
+tw\momocraft\eventplus\Commands.class
+tw\momocraft\eventplus\handlers\ConfigHandler$1.class
+tw\momocraft\eventplus\utils\Language.class
+tw\momocraft\eventplus\utils\Utils.class
+tw\momocraft\eventplus\EventPlus.class
+tw\momocraft\eventplus\handlers\ServerHandler.class
+tw\momocraft\eventplus\handlers\PurgeHandler.class
+tw\momocraft\eventplus\handlers\PermissionsHandler.class
+tw\momocraft\eventplus\utils\DependAPI.class
+tw\momocraft\eventplus\handlers\UpdateHandler.class
+tw\momocraft\eventplus\utils\BungeeCord.class
+tw\momocraft\eventplus\utils\VaultAPI.class
+tw\momocraft\eventplus\handlers\PlayerHandler.class

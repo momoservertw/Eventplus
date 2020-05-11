@@ -1,0 +1,79 @@
+name: EventPlus
+main: tw.momocraft.eventplus.EventPlus
+author: Momocraft
+api-version: 1.13
+version: 1.0.0
+description: Clean the old data and improve the server's performance.
+softdepend: [Vault, MythicMobs, CMI, Residence, PlaceHolderAPI, MySQLPlayerDataBridge, SkinsRestorer, ChatControlPro, DiscordSRV, LuckPerms, MyPet]
+
+commands:
+  eventplus:
+    description: Displays main command menu.
+    permission: eventplus.use
+    usage: |
+      /eventplus
+  eventplus help:
+   description: Shows command menu.
+   permission: eventplus.help
+   usage: |
+     /eventplus help
+  eventplus reload:
+    description: Reloads all EventPlus configuration files.
+    permission: eventplus.command.reload
+    usage: |
+      /eventplus reload
+  eventplus version:
+    description: Checks the plugin version and updates.
+    permission: eventplus.command.version
+    usage: |
+      /eventplus version
+  eventplus clean:
+    description: Cleans the expired data.
+    permission: eventplus.command.clean
+    usage: |
+      /eventplus clean
+
+permissions:
+  eventplus.*:
+    description: Allows use of all commands and feature.
+    default: op
+    children:
+      eventplus.use: true
+      eventplus.command.*: true
+      eventplus.bypass.*: true
+  eventplus.use:
+    description: Allows use of basic commands.
+    default: true
+  eventplus.command.*:
+    description: Allows use all commands.
+    default: op
+    children:
+      eventplus.command.reload: true
+      eventplus.command.version: true
+      eventplus.command.clean: true
+  eventplus.command.reload:
+    description: Allows use of /eventplus command reload.
+    default: op
+  eventplus.command.version:
+    description: Allows use of command /eventplus version.
+    default: op
+  eventplus.command.clean:
+    description: Allowss use of command /eventplus clean.
+    default: op
+  eventplus.bypass.*:
+    description: Allows player to bypass all features.
+    default: op
+    children:
+      eventplus.bypass.clean.*: true
+  eventplus.bypass.clean.*:
+    description: Allows player to bypass all data clean.
+    default: op
+  eventplus.bypass.clean.playerdata:
+    description: Allows player to bypass the playerdata clean.
+    default: op
+  eventplus.bypass.clean.advancements:
+    description: Allows player to bypass the advancements clean.
+    default: op
+  eventplus.bypass.clean.stats:
+    description: Allows player to bypass the stats clean.
+    default: op

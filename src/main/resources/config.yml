@@ -1,0 +1,28 @@
+# --{ =-=-=-=-=-=-=-=-=-= EventPlus's Configuration Settings, by Momocraft =-=-=-=-=-=-=-=-=-= }--
+Config-Version: 1
+# If you want to see if the player data is out of date or bypassed, you can turn on the Debug mode.
+Debugging: false
+Check-Updates: true
+
+# Clean the old data and improve the server's performance.
+# Player bypass permission: eventplus.bypass.clean
+# Event list: blockbreakk
+Clean:
+  Control:
+    Armorstand:
+      Event: blockbreak
+      Event: EntityInteractEvent
+      Conditions:
+        Block:
+
+Message:
+  prefix: '&7[&dEventPlus&7]&r '
+  noPermission: '&cYou do not have permission to use that command!'
+  configReload: '&aConfiguration(s) Reloaded!'
+  unknownCommand: '&cUnknown command, See &e/eventplus help &cfor a list of commands.'
+  EventPlus:
+    Commands:
+      title: '&8▩▩▩▩▩▩▩▩▩▩▩▩▩ &d&lEventPlus &8▩▩▩▩▩▩▩▩▩▩▩▩▩'
+      help: '&a/eventplus help &8- &7This help menu.'
+      reload: '&a/eventplus reload &8- &7Reload config file.'
+      clean: '&a/eventplus clean &8- &7Clean the expired data.'
